@@ -44,4 +44,5 @@ let wordArray = [
     exception: []
   }
 ];
-export { wordArray };
+
+export default wordArray;

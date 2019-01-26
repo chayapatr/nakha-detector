@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>nakha-detector</title>
     <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'mitr';
+            font-weight: 500;
+        }
+        h1{
+            font-size: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="hero is-fullwidth">
-            <input type="text" id="inputText">
-            <input type="button" id="inputButton">
-            <h1 id="highlight">helloworld</h1>
-<h1 id="suggestion">helloworld</h1>
-    </div>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="input text" id="inputText">
+                    </p>
+                    <p class="control">
+                        <a class="button is-info" id="inputButton">
+                            Submit
+                        </a>
+                    </p>
+                </div>
+                <hr>
+                <h1 id="highlight">helloworld</h1>
+                <h1 id="suggestion">helloworld</h1>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="index.js"></script>
+
 </html>
