@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "parcel ./src/js/index.js"
   },
   "repository": "git+https://github.com/chayapatr/nakha-detector.git",
   "author": "chayapatr archiwaranguprok",
@@ -26,12 +26,9 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.15.3",
-    "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "prettier": "^1.15.3"
   },
   "dependencies": {
-    "bulma": "^0.7.2",
-    "is-thirteen": "^2.0.0"
+    "bulma": "^0.7.2"
   }
 }
