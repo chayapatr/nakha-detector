@@ -1,8 +1,8 @@
 // import checker from 'js/checker';
 // import word from 'word.json';
-import checker from './checker.js';
-import domController from './dom.js';
-import inputController from './input.js';
+import checker from './module/checker.js';
+import domController from './module/dom.js';
+import inputController from './module/input.js';
 
 String.prototype.replaceAll = function (search, replacement) {
   var target = this;
