@@ -4,25 +4,22 @@ import domController from './dom.js';
 let checker = input => {
   let highlight = input.text;
   let suggestion = input.text;
-  let exceptionRevert = false;
 
-  let exceptionRevertFunc = () => {
+  let exceptionRevertFunc = mode => {
     wordArray.map(value => {
       value.exception.map(value => {
-        if (!exceptionRevert) {
+        if (mode) {
           suggestion = suggestion.replaceAll(value.word, value.key);
           highlight = highlight.replaceAll(value.word, value.key);
-          exceptionRevert = true;
         } else {
           suggestion = suggestion.replaceAll(value.key, value.word);
           highlight = highlight.replaceAll(value.key, value.word);
-          exceptionRevert = false;
         }
       });
     });
   };
 
-  exceptionRevertFunc();
+  exceptionRevertFunc(true);
   wordArray.map(value => {
     suggestion = suggestion.replaceAll(value.word, value.correction);
     highlight = highlight.replaceAll(
@@ -31,7 +28,7 @@ let checker = input => {
     );
     console.log(highlight);
   });
-  exceptionRevertFunc();
+  exceptionRevertFunc(false);
 
   console.log(highlight);
   return {
