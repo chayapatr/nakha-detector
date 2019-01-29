@@ -12,11 +12,11 @@ let checker = input => {
         if (!exceptionRevert) {
           suggestion = suggestion.replaceAll(value.word, value.key);
           highlight = highlight.replaceAll(value.word, value.key);
-          exceptionRevert = !exceptionRevert;
+          exceptionRevert = true;
         } else {
           suggestion = suggestion.replaceAll(value.key, value.word);
           highlight = highlight.replaceAll(value.key, value.word);
-          exceptionRevert = !exceptionRevert;
+          exceptionRevert = false;
         }
       });
     });
