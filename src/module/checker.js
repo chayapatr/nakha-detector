@@ -16,6 +16,7 @@ let checker = input => {
         } else {
           suggestion = suggestion.replaceAll(value.key, value.word);
           highlight = highlight.replaceAll(value.key, value.word);
+          exceptionRevert = !exceptionRevert;
         }
       });
     });
