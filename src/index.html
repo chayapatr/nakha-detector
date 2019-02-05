@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,15 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>nakha-detector</title>
     <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
-    <style>
-        body{
-            font-family: 'mitr';
-            font-weight: 500;
-        }
-        h1{
-            font-size: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -33,12 +25,88 @@
                     </p>
                 </div>
                 <hr>
-                <h1 id="highlight">helloworld</h1>
-                <h1 id="suggestion">helloworld</h1>
+                <h1 id="highlight"></h1>
+                <h1 id="suggestion"></h1>
             </div>
         </div>
     </section>
 </body>
 <script src="index.js"></script>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Project Zero</title>
+  <meta name="description" content="web application for school math project" />
+  <link rel="stylesheet" type="text/css" href="./style/sass/bulma.scss" />
+  <link rel="stylesheet" type="text/css" href="./style/main.css" />
+  <link rel="stylesheet" type="text/css" href="./style/style.css" />
+  <meta name="theme-color" content="#ffdd57">
+</head>
+
+<body>
+    <section class="hero is-fullheight" id="head">
+        <div class="hero-head">
+          <section class="hero is-small is-danger">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item is-size-4 has-text-weight-bold">
+                  
+                </a>
+            </nav>
+          </section>
+        </div>
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title is-1" id="title">
+              Nakha Detector
+            </p>
+            <section class="hero is-small phone-hide">
+              <div class="hero-body">
+                <div class="container">
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </section>
+            <div class="columns is-multiline" id="input">
+              <div class="column is-12">
+                <input type="text" class="input text" placeholder="input text" id="inputText">
+              </div>
+              <div class="column is-12">
+                <a class="button is-warning is-inverted is-outlined is-fullwidth" id="inputButton">Go</a>
+              </div>
+            </div>
+            <section class="hero" id="reshero">
+              <div class="hero-body">
+                <div class="container">
+                  <hr class="phone-hide"/>
+                  <p class="subtitle" id="highlight">highlight:</p>
+                  <p class="subtitle" id="suggestion">suggestion:</p>
+                  <br />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <section class="hero is-small is-danger">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <p class="is-medium" id="footer-text">
+                  ©chayapatr a. punnasit c. pruttiporn i. phusit k.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+</body>
+<script src="index.js"></script>
 </html>

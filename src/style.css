@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+
+body{
+    font-family: 'mitr';
+    font-weight: 500;
+}
+h1{
+    font-size: 30px;
+}
