@@ -4,11 +4,11 @@ import checker from './module/checker.js';
 import domController from './module/dom.js';
 import inputController from './module/input.js';
 
-String.prototype.replaceAll = function (search, replacement) {
+// eslint-disable-next-line no-extend-native
+String.prototype.replaceAll = function(search, replacement) {
   var target = this;
   return target.replace(new RegExp(search, 'g'), replacement);
 };
-
 
 let controller = () => {
   let input = inputController();

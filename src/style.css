@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Mitr');
 
-body{
+body {
     font-family: 'mitr';
     font-weight: 500;
 }
-h1{
+
+h1 {
     font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) and (max-height: 900px) {
+    .phone-hide {
+        display: none;
+    }
 }
