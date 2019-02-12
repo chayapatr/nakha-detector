@@ -54,6 +54,18 @@ let wordArray = [
       {
         word: 'หายนะค่ะ',
         key: '423nlklksdfjlkajl04832sdfjk'
+      },
+      {
+        word: 'ชนะค่ะ',
+        key: '4lsadfja343skldjlskdfas3'
+      },
+      {
+        word: 'สถานะค่ะ',
+        key: 'lkjsdjl5284324370294jhkasjfAAS'
+      },
+      {
+        word: 'มุมานะค่ะ',
+        key: 'jkhasdjkhKJHKJSHASD789743'
       }
     ]
   },
