@@ -7,7 +7,7 @@ let domController = () => {
     reshero: document.getElementById('reshero')
   };
   return {
-    mainUpdate: function(value) {
+    mainUpdate: value => {
       (dom.suggestion.innerHTML = 'suggestion:' + value.suggestion),
         (dom.highlight.innerHTML = 'highlight:' + value.html),
         (dom.reshero.style.display = 'block');
@@ -19,7 +19,7 @@ let footerDate = () => {
   let d = new Date();
   document.querySelector(
     '#footer-text'
-  ).innerHTML = `©${d.getFullYear()} Chayapatr A. Punnasit C. Athena L. Bussaraporn C.`;
+  ).innerHTML = `©${d.getFullYear()} Chayapatr A. Bussaraporn C. Punnasit C. Athena L.`;
   console.log(`${d.getFullYear()}`);
 };
 

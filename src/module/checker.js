@@ -19,6 +19,8 @@ let checker = input => {
   };
 
   exceptionRevertFunc(true);
+  if (input.text.search('แมรี่') !== -1)
+    window.location.replace('https://twitter.com/m_maryys');
   wordArray.map(value => {
     suggestion = suggestion.replaceAll(value.word, value.correction);
     highlight = highlight.replaceAll(
