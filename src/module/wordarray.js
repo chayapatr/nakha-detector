@@ -50,6 +50,10 @@ let wordArray = [
       {
         word: 'พาหนะค่ะ',
         key: '72XRsdfsfafdsdftkOws'
+      },
+      {
+        word: 'หายนะค่ะ',
+        key: '423nlklksdfjlkajl04832sdfjk'
       }
     ]
   },
@@ -106,6 +110,11 @@ let wordArray = [
   {
     word: 'พยัญชนะคะ',
     correction: 'พยัญชนะคะ',
+    exception: []
+  },
+  {
+    word: 'หายนะคะ',
+    correction: 'หายนะค่ะ',
     exception: []
   },
   {
