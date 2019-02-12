@@ -15,4 +15,12 @@ let domController = () => {
   };
 };
 
-export default domController;
+let footerDate = () => {
+  let d = new Date();
+  document.querySelector(
+    '#footer-text'
+  ).innerHTML = `©${d.getFullYear()} Chayapatr A. Punnasit C. Athena L. Bussaraporn C.`;
+  console.log(`${d.getFullYear()}`);
+};
+
+export { domController, footerDate };

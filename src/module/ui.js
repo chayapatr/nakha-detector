@@ -2,7 +2,7 @@ let footerDate = () => {
   let d = new Date();
   document.querySelector(
     '#footer-text'
-  ).innerHTML = `©${d.getFullYear()} chayapatr a. punnasit c. pruttiporn i. phusit k.`;
+  ).innerHTML = `©${d.getFullYear()} chayapatr a.`;
   console.log(`${d.getFullYear()}`);
 };
 

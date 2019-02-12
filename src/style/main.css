@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
 
 * {
     font-family: 'roboto mono';
@@ -8,4 +9,12 @@
     .phone-hide {
         display: none;
     }
+}
+
+#reshero{
+    display: none;
+}
+
+.thai {
+    font-family: 'Sarabun';
 }

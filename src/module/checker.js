@@ -1,5 +1,4 @@
 import wordArray from './wordarray.js';
-import domController from './dom.js';
 
 let checker = input => {
   let highlight = input.text;
@@ -24,7 +23,7 @@ let checker = input => {
     suggestion = suggestion.replaceAll(value.word, value.correction);
     highlight = highlight.replaceAll(
       value.word,
-      `<a style="color:red">${value.word}</a>`
+      `<a style="color:red" class="thai">${value.word}</a>`
     );
     console.log(highlight);
   });
